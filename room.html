@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grand Hotel Excelsior Port Royal</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- Top notice bar -->
+  <div class="top-bar">
+    <div class="Container">
+      We're currently enhancing our entire property just for you. Thanks for your patience and understanding during this
+      time.
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header other-pages-header">
+    <div class="header-inner">
+
+      <a href="#" class="logo">
+        <img src="images/logo-f.png" alt="Grand Hotel Excelsior Port Royal">
+      </a>
+
+      <!-- Mobile Toggle -->
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav">
+        <a href="index.html" class="active">HOME</a>
+        <a href="Contact.html">CONTACT US</a>
+        <a href="faq.html">FAQ</a>
+        <a href="#rooms">YOUR ROOM</a>
+        <span class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+      </nav>
+
+    </div>
+  </header>
+  <!-- Hero -->
+  <section class="hero otherpages" style="background-image:url('images/505740629-1.jpg');">
+    <div class="Container">
+      <div class="hero-overlay">
+        <div class="hero-content">
+          <h1>Bookings</h1>
+        </div>
+  </section>
+
+  <!---experience-roo  sections -->
+  <section class="amenities-section experience-room ">
+    <div class="Container">
+      <h2 class="section-title">Your Next Grand Experience Awaits
+    </h2>
+    </div>
+  </section>
+  <!--End-->
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="Container">
+      <div class="footer-grid">
+        <div class="footer-logo">
+          <img src="images/logo-f.png" alt="Grand Hotel Excelsior Port Royal">
+        </div>
+        <div class="footer-col">
+          <h4>About Us</h4>
+          <p>Overlooking the Caribbean Sea, this informal hotel and marina is a 6-minute walk from Sunken Pirate City, 2
+            km from the islet of Lime Cay, and 6 km from Norman Manley International Airport.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Address</h4>
+          <div class="textwidget">
+            <p><i class="fa-solid fa-location-dot"></i> <span class="wixui-rich-text__text">Port Royal, Kingston
+                1,&nbsp; Jamaica</span><br>
+              <i class="fa-solid fa-phone"></i> <a href="tel:+1(876)967-8387">+1 (876)967-8387</a>,<br>
+              <i class="fa-brands fa-whatsapp"></i><a href="tel:+1(876)501-3167">+1 876-501-3167</a><br>
+              <i class="fa-solid fa-envelope"></i> <span class="wixui-rich-text__text"><a class="wixui-rich-text__text"
+                  href="mailto:reservations@grandportroyal.com"
+                  data-auto-recognition="true">reservations@grandportroyal.com</a></span>
+            </p>
+            <p class="font_8 wixui-rich-text__text">
+            </p>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul id="menu-footer-menu" class="menu">
+            <li id="menu-item-824" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-824"><a
+                href="https://www.grandhotelexcelsiorportroyal.com/reviews/">Reviews</a></li>
+            <li id="menu-item-822"
+              class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-822"><a
+                rel="privacy-policy" href="https://www.grandhotelexcelsiorportroyal.com/privacy-policy/">Privacy
+                Policy</a></li>
+            <li id="menu-item-1089" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1089"><a
+                href="https://www.grandhotelexcelsiorportroyal.com/faq/">FAQ</a></li>
+            <li id="menu-item-2579" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2579"><a
+                href="https://www.grandhotelexcelsiorportroyal.com/terms-and-conditions/">Terms and Conditions</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2025 Grand Hotel Excelsior Port Royal. All Rights Reserved. Designed by Evolve Marketing &amp;
+          Media</span>
+        <div class="social-icons">
+          <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://web.whatsapp.com/send?phone=18765013167&text=Hello!" class="whatsapp-float"><i
+      class="fa-brands fa-whatsapp"></i></a>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const toggle = document.querySelector(".menu-toggle");
+      const nav = document.querySelector(".main-nav");
+
+      toggle.addEventListener("click", function () {
+        nav.classList.toggle("active");
+      });
+
+      // Close menu after clicking a link
+      nav.querySelectorAll("a").forEach(function (link) {
+        link.addEventListener("click", function () {
+          nav.classList.remove("active");
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>
