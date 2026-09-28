@@ -35,7 +35,31 @@ h1,h2,h3,h4,h5{  font-family: "Marcellus SC", serif;}
   flex-direction: column;
   gap: 5px;
 }
+.main-nav ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
 
+.main-nav ul li {
+    list-style: none;
+}
+li.drop ul.sub-menu li {background: #fff;display: inline;color: #000 !important;position: absolute;top: 60px;left: -140px;padding: 15px 20px;width: 200px;cursor: pointer;display: none;transition: 2.5s;}
+li.drop ul.sub-menu li a {
+    color: #000;
+    padding: 14px;
+}
+li.drop {
+    position: relative;
+}
+li.drop ul.sub-menu li:hover a {
+    color: #d3a862;
+    cursor: pointer;
+}
+li.drop:hover ul.sub-menu li {
+    display: block;
+    transition: 0.9s;
+}
 .menu-toggle span {
   display: block;
   width: 28px;
@@ -65,9 +89,9 @@ h1,h2,h3,h4,h5{  font-family: "Marcellus SC", serif;}
   background: #0000003b;
 }
 .logo img{object-fit: contain;max-width: 120px;}
-.main-nav{display:flex;align-items:center;gap:10px;}
+.main-nav ul {display:flex;align-items:center;gap:10px;}
 .main-nav a {
-    font-size: 14px;
+    font-size: 1emgit a;
     letter-spacing: .5px;
     padding: 40px 13px;
     text-transform: uppercase;
@@ -978,7 +1002,7 @@ Mobile Responsive Css Start
 ============================*/
 
 @media (min-width: 769px) {
-  .main-nav {
+  .main-nav ul {
     display: flex;
   }
 }
