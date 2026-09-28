@@ -1179,5 +1179,16 @@ nav.main-nav.active {
 nav.main-nav a {
     color: #000;
 }
+li.drop ul.sub-menu li {
+    display: block !important;
+    position: static;
+    padding: 0;
+}
+li.drop ul.sub-menu li a {
+    padding: 5px 0;
+}
+li.drop a i {
+    display: none !important;
+}
 
 }
