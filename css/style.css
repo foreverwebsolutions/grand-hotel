@@ -31,7 +31,7 @@ h1,h2,h3,h4,h5{  font-family: "Marcellus SC", serif;}
     width: 100%;
     top: 0;
 }
-header {
+.other-pages-header {
     margin-top: 37px;
 }
 /* Mobile menu toggle */
@@ -148,6 +148,7 @@ li.drop:hover ul.sub-menu li {
   display:flex;
   align-items:center;
   justify-content:center;
+  margin-top: 36px;
 }
 .hero-overlay {
     position: absolute;
@@ -1106,7 +1107,7 @@ Mobile Responsive Css Start
 }
   section{padding:60px 16px  0px;}
   .site-header{position:relative;top:0;background:var(--dark-brown);}
-  .hero{margin-top:0;}
+  .hero{margin-top:65;}
 .header-inner {
     position: absolute;
     width: 100%;
@@ -1199,7 +1200,7 @@ li.drop ul.sub-menu li a {
 li.drop a i {
     display: none !important;
 }
-header {
+.other-pages-header {
     margin-top: 65px;
 }
 
