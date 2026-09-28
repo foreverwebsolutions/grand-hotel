@@ -27,9 +27,9 @@ h1,h2,h3,h4,h5{  font-family: "Marcellus SC", serif;}
 }
 .top-bar {
     position: fixed;
-    text-align: 0;
     width: 100%;
     top: 0;
+    z-index: 99999;
 }
 .other-pages-header {
     margin-top: 37px;
@@ -1107,7 +1107,7 @@ Mobile Responsive Css Start
 }
   section{padding:60px 16px  0px;}
   .site-header{position:relative;top:0;background:var(--dark-brown);}
-  .hero{margin-top:65;}
+  .hero{margin-top:60px;}
 .header-inner {
     position: absolute;
     width: 100%;
