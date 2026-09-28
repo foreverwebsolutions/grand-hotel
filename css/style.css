@@ -1168,5 +1168,16 @@ iframe {
     padding: 20px 0px;
 
 }
+.main-nav ul {
+    display: block;
+}
+
+nav.main-nav.active {
+    background: #fff;
+}
+
+nav.main-nav a {
+    color: #000;
+}
 
 }
