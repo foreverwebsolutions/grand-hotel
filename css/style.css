@@ -59,6 +59,7 @@ h1,h2,h3,h4,h5{  font-family: "Marcellus SC", serif;}
   align-items:center;
   justify-content:space-between;
   padding:10px 30px;
+  background: #0000003b;
 }
 .logo img{object-fit: contain;max-width: 120px;}
 .main-nav{display:flex;align-items:center;gap:10px;}
@@ -104,7 +105,7 @@ h1,h2,h3,h4,h5{  font-family: "Marcellus SC", serif;}
 }
 .hero{
   position:relative;
-  height:640px;
+  height:540px;
   background-size:cover;
   background-position:center;
   background-attachment: fixed;
@@ -115,7 +116,7 @@ h1,h2,h3,h4,h5{  font-family: "Marcellus SC", serif;}
 .hero-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(180deg, rgb(20 40 60 / 48%), rgb(20 40 60 / 43%));
+    background: linear-gradient(180deg, rgb(20 40 60 / 22%), rgb(20 40 60 / 15%));
 }
 .hero-content {
     position: relative;
@@ -123,10 +124,9 @@ h1,h2,h3,h4,h5{  font-family: "Marcellus SC", serif;}
     text-align: center;
     color: #fff;
     padding: 0 20px;
-    padding: 250px 0px 200px 0px;
+    padding: 272px 0px 200px 0px;
 }
 .hero-content h1 {
-    max-width: 1180px;
     margin: 0 auto;
     font-size: 72px;
     letter-spacing: 4px;
@@ -176,21 +176,22 @@ h1,h2,h3,h4,h5{  font-family: "Marcellus SC", serif;}
 }
 .hero-cta-bar {
     z-index: 2;
-    background: var(--dark-brown);
+    background: #3A1F15;
     width: 100%;
     display: flex;
     justify-content: center;
     gap: 64px;
     padding: 22px 20px;
     position: absolute;
-    bottom: -38px;
+    bottom: -68px;
     left: 0;
-    box-shadow: 3px 19px 16px 0px rgba(0, 0, 0, 0.5);
     max-width: 1280px;
     margin: auto;
     left: 0;
     right: 0;
     border-radius: 8px;
+    box-shadow: 3px 19px 16px 0px rgba(0, 0, 0, 0.5);
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
 }
 
 /* Buttons */
@@ -204,13 +205,14 @@ h1,h2,h3,h4,h5{  font-family: "Marcellus SC", serif;}
   cursor:pointer;
 }
 .btn-gold {
-    background: var(--gold);
+    background: #EAB96A;
     color: #fff;
-    border: 2px solid var(--gold);
+    border: 2px solid #EAB96A;
     border-color: #fff;
-    font-family: 'Marcellus SC';
+    font-family: 'Jost';
     font-size: 14px;
     padding: 7px 32px;
+    font-weight: 600;
 }
 .btn-outline {
     border: 1px solid var(--gold-dark);
@@ -989,12 +991,40 @@ Mobile Responsive Css Start
 @media(max-width:768px){
   
   .main-nav{gap:16px;flex-wrap:wrap;justify-content:center;}
-  .hero{height:560px;}
-  .hero-content h1{font-size:34px;}
-  .hero-cta-bar{flex-direction:column;align-items:center;gap:12px;bottom:-120px;}
+.hero {
+    margin-top: 0;
+    background-attachment: scroll;
+    background-position: top center !important;
+    height: 500px;
+}
+.hero-content {
+    padding: 180px 0px 210px 0px;
+}
+.hero-content h1 {
+    font-size: 33px;
+    letter-spacing: 0px;
+}
+.hero-cta-bar {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    bottom: -175px;
+    margin: 1px 15px;
+    max-width: 93%;
+}
   .about-grid,.history-row,.venue-grid,.rooms-grid,.amenities-grid,.activities-grid,.cuisine-grid,.reviews-grid,.footer-grid,.form-row{
     grid-template-columns:1fr !important;
   }
+.scroll-indicator {
+    margin-top: 19px;
+    font-size: 35px;
+    width: 80px;
+}
+.hero-sub {
+    font-size: 18px;
+    padding: 0 30px;
+    padding-top: 12px;
+}
   .history-row.reverse {
     display: flex;
     flex-direction: column-reverse;
@@ -1039,7 +1069,7 @@ Mobile Responsive Css Start
   padding: 0;
 }
 section.about-section {
-    padding-top: 150px !important;
+    padding-top: 210px !important;
 }
   .menu-toggle {
     display: flex;
