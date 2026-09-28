@@ -54,6 +54,9 @@ h1,h2,h3,h4,h5{  font-family: "Marcellus SC", serif;}
     z-index: 10;
     background-color: #0000003b;
 }
+.other-pages-header .header-inner {
+    background: #fff;
+}
 .header-inner{
   display:flex;
   align-items:center;
@@ -88,7 +91,7 @@ h1,h2,h3,h4,h5{  font-family: "Marcellus SC", serif;}
     color: #000;
 }
 .otherpages .hero-overlay {
-    background: linear-gradient(180deg, rgb(20 40 60 / 28%), rgb(20 40 60 / 23%)) !important;
+    background: linear-gradient(180deg, rgb(20 40 60 / 28%), rgb(20 40 60 / 28%)) !important;
 }
 .otherpages {
     height: 400px !important;
@@ -116,7 +119,7 @@ h1,h2,h3,h4,h5{  font-family: "Marcellus SC", serif;}
 .hero-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(180deg, rgb(20 40 60 / 22%), rgb(20 40 60 / 15%));
+    background: linear-gradient(180deg, rgb(20 40 60 / 28%), rgb(20 40 60 / 28%));
 }
 .hero-content {
     position: relative;
