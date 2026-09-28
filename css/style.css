@@ -1064,7 +1064,7 @@ Mobile Responsive Css Start
     grid-template-columns:1fr !important;
   }
 .scroll-indicator {
-    margin-top: 19px;
+    margin-top: 39px;
     font-size: 35px;
     width: 80px;
 }
@@ -1108,7 +1108,7 @@ Mobile Responsive Css Start
 }
   section{padding:60px 16px  0px;}
   .site-header{position:relative;top:0;background:var(--dark-brown);}
-  .hero{margin-top:60px;}
+  .hero{margin-top:58px;}
 .header-inner {
     position: absolute;
     width: 100%;
