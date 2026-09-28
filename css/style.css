@@ -392,12 +392,12 @@ section{
   margin-top:20px;
   align-items:start;
 }
-section.venue-section .venue-card p , .room-card p{
+section.venue-section .venue-card p, .room-card p {
     font-family: "Roboto", sans-serif;
-    line-height:1.77778;
-    font-size:17px;
-    font-weight:400;
-    color:#000;
+    line-height: 1.77778;
+    font-size: 15px !important;
+    font-weight: 400;
+    color: #000 !important;
 }
 .venue-card{text-align:center;}
 .venue-card img{width:100%;height:auto;object-fit:cover;margin-bottom:16px;}
@@ -444,7 +444,7 @@ section.venue-section .venue-card p , .room-card p{
     width: 25%;
 }
 .room-card h4{font-size:20px;margin-bottom:12px;}
-.room-card p{font-size:14px;color:var(--text-muted);padding:0 20px;margin-bottom:18px;min-height:110px;}
+.room-card p{font-size:15px;color:#000;padding:0 20px;margin-bottom:18px;min-height:110px;}
 
 /* Activities */
 .activities-grid{
@@ -1032,7 +1032,7 @@ Mobile Responsive Css Start
     margin-top: 0;
     background-attachment: scroll;
     background-position: top center !important;
-    height: 500px;
+    height: 460px;
 }
 .hero-content {
     padding: 180px 0px 210px 0px;
@@ -1101,6 +1101,7 @@ Mobile Responsive Css Start
 .header-inner {
     position: absolute;
     width: 100%;
+    background: #0000001f;
 }
 .Container{
   padding: 0;
