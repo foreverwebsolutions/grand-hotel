@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 :root{
   --dark-brown:#3b2a1a;
   --gold:#d9ae67;
@@ -86,7 +86,7 @@ li.drop:hover ul.sub-menu li {
   align-items:center;
   justify-content:space-between;
   padding:10px 30px;
-  background: #0000003b;
+  background: #00000005;
 }
 .logo img{object-fit: contain;max-width: 120px;}
 .main-nav ul {display:flex;align-items:center;gap:10px;}
@@ -143,7 +143,7 @@ li.drop:hover ul.sub-menu li {
 .hero-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(180deg, rgb(20 40 60 / 35%), rgb(20 40 60 / 35%));
+    background: linear-gradient(180deg, rgb(20 40 60 / 40%), rgb(20 40 60 / 40%));
 }
 .hero-content {
     position: relative;
@@ -275,7 +275,7 @@ section{
     font-weight: 600;
     -webkit-text-stroke-color: #000;
     stroke: #000;
-    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    /* text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); */
     color: #000000;
 }
 .section-title::after{
@@ -391,6 +391,13 @@ section{
   gap:36px;
   margin-top:20px;
   align-items:start;
+}
+section.venue-section .venue-card p , .room-card p{
+    font-family: "Roboto", sans-serif;
+    line-height:1.77778;
+    font-size:17px;
+    font-weight:400;
+    color:#000;
 }
 .venue-card{text-align:center;}
 .venue-card img{width:100%;height:auto;object-fit:cover;margin-bottom:16px;}
@@ -550,6 +557,9 @@ section.reviews-section {
     max-width: 100%;
     padding: 0;
     background: var(--bg-light);
+}
+.contact-section {
+    padding-bottom: 70px !important;
 }
 .contact-grid{
   display:grid;
