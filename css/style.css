@@ -132,7 +132,7 @@ li.drop:hover ul.sub-menu li {
 }
 .hero{
   position:relative;
-  height:540px;
+  height:600px;
   background-size:cover;
   background-position:center;
   background-attachment: fixed;
@@ -168,7 +168,7 @@ li.drop:hover ul.sub-menu li {
     color: #FFFFFF;
 }
 .scroll-indicator {
-    margin-top: 60px;
+    margin-top: 95px;
     width: 63px;
     height: 60px;
     display: flex;
