@@ -25,6 +25,15 @@ h1,h2,h3,h4,h5{  font-family: "Marcellus SC", serif;}
   font-size:13px;
   padding:8px 20px;
 }
+.top-bar {
+    position: fixed;
+    text-align: 0;
+    width: 100%;
+    top: 0;
+}
+header {
+    margin-top: 37px;
+}
 /* Mobile menu toggle */
 .menu-toggle {
   display: none;
@@ -1189,6 +1198,9 @@ li.drop ul.sub-menu li a {
 }
 li.drop a i {
     display: none !important;
+}
+header {
+    margin-top: 65px;
 }
 
 }
