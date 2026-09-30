@@ -142,7 +142,7 @@ li.drop:hover ul.sub-menu li {
 }
 .hero{
   position:relative;
-  height:600px;
+  height:580px;
   background-size:cover;
   background-position:center;
   background-attachment: fixed;
@@ -154,7 +154,8 @@ li.drop:hover ul.sub-menu li {
 .hero-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(180deg, rgb(20 40 60 / 40%), rgb(20 40 60 / 40%));
+    background: linear-gradient(180deg, rgb(20 40 60 / 30%), rgb(20 40 60 / 30%));
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
 }
 .hero-content {
     position: relative;
