@@ -614,13 +614,14 @@ section.reviews-section {
 .checkbox-list label{display:flex;align-items:center;gap:6px;font-size:14px;font-weight:normal;white-space:nowrap;}
 .checkbox-list input{flex-shrink:0;}
 
-.contact-info{
-  background:var(--bg-light);
-  padding:60px 50px;
-  text-align:center;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
+.contact-info {
+    background: var(--bg-light);
+    padding: 60px 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 110px;
 }
 .contact-info p {
     color: #000000;
@@ -1125,6 +1126,9 @@ Mobile Responsive Css Start
 }
 .room-w .room-card {
     width: 100%;
+}
+.contact-info {
+    padding: 20px 0;
 }
 .room-w .blank-box {
     display: none;
