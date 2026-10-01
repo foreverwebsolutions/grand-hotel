@@ -527,7 +527,7 @@ section.venue-section .venue-card p, .room-card p {
     background: linear-gradient(180deg, rgb(0 0 0 / 0%), rgb(0 0 0 / 0%)) !important;
 }
 .history-pages .hero-overlay {
-    background: linear-gradient(180deg, rgb(0 0 0 / 15%), rgb(0 0 0 / 15%)) !important;
+    background: linear-gradient(180deg, rgb(0 0 0 / 30%), rgb(0 0 0 / 30%)) !important;
 }
 
 .cuisine-card{position:relative;overflow:hidden;height:280px;}
