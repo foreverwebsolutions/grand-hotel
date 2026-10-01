@@ -519,6 +519,13 @@ section.venue-section .venue-card p, .room-card p {
   gap:20px;
   margin-top:20px;
 }
+.cuisin-page, .activities-page {
+    height: 460px !important;
+}
+
+.cuisin-page .hero-overlay {
+    background: linear-gradient(180deg, rgb(0 0 0 / 0%), rgb(0 0 0 / 0%)) !important;
+}
 .cuisine-card{position:relative;overflow:hidden;height:280px;}
 .cuisine-card img {
     width: 100%;
