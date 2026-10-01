@@ -129,18 +129,19 @@ li.drop:hover ul.sub-menu li {
     color: #000;
 }
 .otherpages .hero-overlay {
-    background: linear-gradient(180deg, rgb(20 40 60 / 28%), rgb(20 40 60 / 28%)) !important;
+    background: linear-gradient(180deg, rgb(20 40 60 / 35%), rgb(20 40 60 / 35%)) !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .otherpages {
-    height: 400px !important;
+    height: 500px !important;
+     background-attachment: scroll !IMPORTANT;
 }
 .otherpages .hero-content {
-    padding: 150px  20px 40px;
+    padding: 0px  20px 0px;
 }
 /* Hero */
-.otherpages{
-        background-attachment: scroll !IMPORTANT;
-}
 .otherpages .hero-content h1 {
     font-size: 52px;
 }
@@ -349,9 +350,10 @@ section.about-section p {
     padding-right: 20px;
 }
 .about-text p, .history-text p, .venue-card p {
+    color:#0c0c0c;
     margin-bottom: 16px;
-    font-size: 18px;
-    color: var(--text-dark);
+    font-size: 16px !IMPORTANT;
+    padding-right: 15px !IMPORTANT;
 }
 .about-main-img{grid-row:span 2;height:100%;object-fit:cover;}
 .about-thumbs{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
