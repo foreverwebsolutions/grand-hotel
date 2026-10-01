@@ -129,7 +129,7 @@ li.drop:hover ul.sub-menu li {
     color: #000;
 }
 .otherpages .hero-overlay {
-    background: linear-gradient(180deg, rgb(20 40 60 / 45%), rgb(20 40 60 / 45%)) !important;
+    background: linear-gradient(180deg, rgb(0 0 0 / 48%), rgb(0 0 0 / 48%)) !important;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -138,6 +138,7 @@ li.drop:hover ul.sub-menu li {
     height: 500px !important;
     background-attachment: scroll !IMPORTANT;
     background-position: center !important;
+    margin-top: 0 !important;
 }
 .otherpages .hero-content {
     padding: 0px  20px 0px;
