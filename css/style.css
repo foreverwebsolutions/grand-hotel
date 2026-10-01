@@ -978,11 +978,12 @@ terms  Bond Page css
 .gbclup-page h2.section-title {
     margin: 0 0 0px;
 }
-
 .gbclup-page p.section-subtitle {
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 400;
     font-family: 'Jost';
+    color: #0c0c0c;
+    padding: 5px  0;
 }
 
 .gbclup-page a.btn.btn-outline {
@@ -1003,10 +1004,16 @@ terms  Bond Page css
 }
 p.connected-center {
     text-align: center;
-    margin: 0 0 10px;
+    margin: 0 0 50px;
+    font-size: 16px;
 }
 p.connected-center.border-botton:after {
     border-bottom: 1px solid #ddd;
+}
+.other-pages-footer .site-footer {
+    background: #f4f3f387;
+    padding-top: 50px;
+    margin-top: 30px;
 }
 
 p.connected-center.border-botton:after {
@@ -1040,6 +1047,10 @@ p.connected-center.border-botton {
 .gb-club-pagese {
     padding: 0 !important;
     height: auto !IMPORTANT;
+}
+.gb-club-pagese img {
+    width: 70%;
+    margin: auto;
 }
 .gbclup-page .amenities-grid {
     grid-template-columns: repeat(2, 1fr);
