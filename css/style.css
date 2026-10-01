@@ -609,8 +609,10 @@ section.reviews-section {
 }
 .contact-form {
     color: #fff;
-    padding: 30px;
-    background: #4e2b08;
+    padding: 0px 60px  0 0px;
+    background: #f5f5f5;
+}
+.contact-form iframe {
     margin-top: -90px;
 }
 .checkbox-list input {
