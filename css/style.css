@@ -129,14 +129,15 @@ li.drop:hover ul.sub-menu li {
     color: #000;
 }
 .otherpages .hero-overlay {
-    background: linear-gradient(180deg, rgb(20 40 60 / 35%), rgb(20 40 60 / 35%)) !important;
+    background: linear-gradient(180deg, rgb(20 40 60 / 45%), rgb(20 40 60 / 45%)) !important;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .otherpages {
     height: 500px !important;
-     background-attachment: scroll !IMPORTANT;
+    background-attachment: scroll !IMPORTANT;
+    background-position: center !important;
 }
 .otherpages .hero-content {
     padding: 0px  20px 0px;
@@ -144,6 +145,7 @@ li.drop:hover ul.sub-menu li {
 /* Hero */
 .otherpages .hero-content h1 {
     font-size: 52px;
+    letter-spacing: normal;
 }
 .hero{
   position:relative;
