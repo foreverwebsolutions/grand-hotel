@@ -263,7 +263,7 @@ li.drop:hover ul.sub-menu li {
     font-weight: 600;
 }
 .btn-outline {
-    border: 1px solid var(--gold-dark);
+    border: 1px solid #EAB96A;
     font-size: 12px;
     background-color: #02010100;
     fill: #EAB96A;
@@ -272,7 +272,18 @@ li.drop:hover ul.sub-menu li {
     border-width: 2px 2px 2px 2px;
     border-color: #EAB96A;
     border-radius: 0px 0px 0px 0px;
-    font-family: 'Marcellus SC';
+    font-family: 'Roboto';
+    font-size: 15px;
+    padding: 12px 24px;
+    line-height: 1;
+    font-weight: 500;
+}
+section.cuisine-section h2 {
+    margin: 0 0 30px;
+}
+section.cuisine-section h2:after {
+    background: #eab96a;
+    width: 17%;
 }
 .btn-outline.small{padding:9px 20px;}
 .btn-submit{
@@ -595,7 +606,7 @@ section.reviews-section {
 }
 /* Contact */
 .contact-section {
-    padding: 40px  10px !important;
+    padding: 60px  10px !important;
     max-width: 100%;
     padding: 0;
     background: var(--bg-light);
@@ -991,23 +1002,32 @@ terms  Bond Page css
 .gbclup-page a.btn.btn-outline {
     margin: auto;
     display: flex;
-    width: 200px;
-    margin-bottom: 20px;
+    width: 220px;
+    margin-bottom: 10px;
     background: #EAB96A;
     color: #fff;
     border-radius: 3px;
-        justify-content: center;
+    justify-content: center;
+    line-height: 0.9;
+    font-size: 15px;
+    font-family: revert;
+    font-weight: 500;
+    margin-top: 40px;
 }
 .borderss {
-    border: 1px solid #fbcb7c;
+    border: 1px solid #eab96a;
     width: 360px;
     margin: auto;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 p.connected-center {
     text-align: center;
     margin: 0 0 50px;
     font-size: 16px;
+    color: #0c0c0c;
+}
+.gbclup-page .history-text p {
+    margin: 0 0 24px;
 }
 p.connected-center.border-botton:after {
     border-bottom: 1px solid #ddd;
@@ -1021,7 +1041,7 @@ h4.ne-su {
     font-size: 1.111em;
     line-height: 1.4em;
     text-align: center;
-    padding: 20px  0;
+    padding: 0px  0 10px;
 }
 p.connected-center.border-botton:after {
     content: '';
@@ -1051,9 +1071,13 @@ p.connected-center.border-botton {
 .gbclup-page .amenity-card img {
     border-radius: 0;
 }
+.gbclup-page {
+    padding-top: 100px;
+}
 .gb-club-pagese {
     padding: 0 !important;
     height: auto !IMPORTANT;
+    border-top: 1px solid #f5f5f5;
 }
 .gb-club-pagese img {
     width: 70%;
