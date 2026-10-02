@@ -284,6 +284,9 @@ li.drop:hover ul.sub-menu li {
     line-height: 1;
     font-weight: 500;
 }
+.symphony {
+    padding-top: 35px;
+}
 section.cuisine-section h2 {
     margin: 0 0 30px;
 }
@@ -737,7 +740,7 @@ ul#menu-footer-menu {
     line-height: 2;
     font-family: 'Jost' !important;
     font-size: 15px;
-    color: #6d6d6d !important;
+    color: #6d6d6d ;
 }
 .footer-col .textwidget p {
     padding-right: 35px !important;
@@ -830,7 +833,12 @@ Contact Page css
     justify-content: flex-start;
     background: #fff;
 }
-
+.contact-page span.wixui-rich-text__text {
+    font-family: "Marcellus SC", Sans-serif;
+    font-size: 18px !IMPORTANT;
+    font-weight: 500;
+    color: #000000 !important;
+}
 .contact-page h2 {
     text-align: left;
     padding-right:60px;
