@@ -834,9 +834,9 @@ Contact Page css
     background: #fff;
 }
 .contact-page span.wixui-rich-text__text {
-    font-family: "Marcellus SC", Sans-serif;
+    font-family: "Marcellus SC", Sans-serif I !important;
     font-size: 18px !IMPORTANT;
-    font-weight: 500;
+    font-weight: 500 !important;
     color: #000000 !important;
 }
 .contact-page h2 {
