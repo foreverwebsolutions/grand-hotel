@@ -125,7 +125,13 @@ li.drop:hover ul.sub-menu li {
 .other-pages-header a {
     color: #000;
 }
-
+.other-pages-header a {
+    color: #000;
+    font-size: 16px;
+    text-transform: none;
+    font-family: "Jost", sans-serif !IMPORTANT;
+    font-weight: 500;
+}
 .other-pages-header i {
     color: #000;
 }
@@ -319,7 +325,7 @@ section{
   bottom:0;left:50%;
   transform:translateX(-50%);
   width:130px;height:2px;
-  background:var(--gold-dark);
+  background:#eab96a;
 }
 .section-subtitle {
     text-align: center;
@@ -896,6 +902,9 @@ Activities Page css
 .activities .amenity-card {
     height: 280px;
 }
+.gallery-page .amenity-card {
+    height: auto;
+}
 /*===================
 History Page css
 =====================*/
@@ -1045,15 +1054,19 @@ h4.ne-su {
 }
 p.connected-center.border-botton:after {
     content: '';
-    border: 1px solid #636363;
+    border: 1px solid #0c0c0c !IMPORTANT;
     position: absolute;
     width: 180px;
-    bottom: -14px;
+    bottom: -24px;
     left: 0;
     right: 0;
-    margin:  auto;
+    margin: auto;
 }
-
+.new-elite a.btn.btn-outline {
+    letter-spacing: 0;
+    margin-top: 90px !important;
+    width: 170px !important;
+}
 p.connected-center.border-botton {
     margin-bottom: 40px;
     position:relative;
@@ -1078,6 +1091,13 @@ p.connected-center.border-botton {
     padding: 0 !important;
     height: auto !IMPORTANT;
     border-top: 1px solid #f5f5f5;
+}
+.new-elite p {
+    margin-bottom: 25px;
+}
+
+.new-elite h2 {
+    padding-bottom: 30px;
 }
 .gb-club-pagese img {
     width: 70%;
