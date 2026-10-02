@@ -738,7 +738,7 @@ ul#menu-footer-menu {
 .footer-col .textwidget p span {
     padding: 0;
     line-height: 2;
-    font-family: 'Jost' !important;
+    font-family: 'Jost';
     font-size: 15px;
     color: #6d6d6d ;
 }
