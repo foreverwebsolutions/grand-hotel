@@ -686,10 +686,13 @@ section.reviews-section {
     width: 100px !important;
 }
 .contact-info .btn-outline{margin:0 auto;}
-
+p.MsoNormal span {
+    font-weight: 700;
+    font-family: 'Jost';
+}
 /* Footer */
 .site-footer {
-    background: #ffffff;
+    background: #f9f9f9
     padding-top: 50px;
 }
 .footer-grid {
@@ -1023,7 +1026,7 @@ terms  Bond Page css
 .gbclup-page a.btn.btn-outline {
     margin: auto;
     display: flex;
-    width: 220px;
+    width: 199px;
     margin-bottom: 10px;
     background: #EAB96A;
     color: #fff;
@@ -1034,6 +1037,8 @@ terms  Bond Page css
     font-family: revert;
     font-weight: 500;
     margin-top: 40px;
+    letter-spacing: 0;
+    padding: 10px;
 }
 .borderss {
     border: 1px solid #eab96a;
