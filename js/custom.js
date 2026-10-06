@@ -14,21 +14,37 @@
       });
     });
 
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener("DOMContentLoaded", function () {
 
-    const openSearch = document.getElementById('open-search');
-    const closeSearch = document.getElementById('close-search');
-    const searchPopup = document.getElementById('search-popup');
+    const openSearch = document.getElementById("open-search");
+    const closeSearch = document.getElementById("close-search");
+    const popup = document.getElementById("search-popup");
+    const form = document.getElementById("search-form");
+    const input = document.getElementById("search-input");
 
     if (openSearch) {
-        openSearch.addEventListener('click', function () {
-            searchPopup.classList.add('active');
+        openSearch.addEventListener("click", function () {
+            popup.classList.add("active");
+            input.focus();
         });
     }
 
     if (closeSearch) {
-        closeSearch.addEventListener('click', function () {
-            searchPopup.classList.remove('active');
+        closeSearch.addEventListener("click", function () {
+            popup.classList.remove("active");
+        });
+    }
+
+    if (form) {
+        form.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            const keyword = input.value.trim();
+
+            if (!keyword) return;
+
+            window.location.href =
+                "search.html?q=" + encodeURIComponent(keyword);
         });
     }
 

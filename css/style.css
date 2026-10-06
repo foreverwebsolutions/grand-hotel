@@ -1154,11 +1154,11 @@ p.connected-center.border-botton {
 .search-popup {
     position: fixed;
     inset: 0;
-    background: rgba(0,0,0,.80);
+    background: rgba(0,0,0,.78);
+    z-index: 99999;
     display: none;
     align-items: center;
     justify-content: center;
-    z-index: 99999;
 }
 
 .search-popup.active {
@@ -1172,12 +1172,12 @@ p.connected-center.border-botton {
 }
 
 .search-popup input {
-    flex: 1;
+    width: 100%;
     height: 68px;
-    padding: 0 20px;
     border: 0;
-    outline: none;
+    padding: 0 20px;
     font-size: 16px;
+    outline: none;
 }
 
 .search-popup form button {
@@ -1185,13 +1185,12 @@ p.connected-center.border-botton {
     border: 0;
     background: #c2a276;
     color: #fff;
-    font-size: 20px;
     cursor: pointer;
 }
 
-.search-close {
+#close-search {
     position: absolute;
-    top: 25px;
+    top: 20px;
     right: 30px;
     background: none;
     border: 0;
