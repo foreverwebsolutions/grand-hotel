@@ -66,7 +66,7 @@
   </div>
 </section>
 <script>
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", async function () {
 
     const params = new URLSearchParams(window.location.search);
     const keyword = params.get("q");
@@ -77,52 +77,77 @@ document.addEventListener("DOMContentLoaded", function () {
         return;
     }
 
-    const searchText = keyword.toLowerCase();
+    results.innerHTML = `<p>Searching for "<strong>${keyword}</strong>"...</p>`;
 
+    // Apni website ke HTML pages yahan add karo
     const pages = [
-        {
-            title: "About Us",
-            url: "about.html",
-            content: "Learn more about our company and services."
-        },
-        {
-            title: "Services",
-            url: "services.html",
-            content: "We provide professional web design and development services."
-        },
-        {
-            title: "Contact Us",
-            url: "contact.html",
-            content: "Contact us for more information."
-        },
-        {
-            title: "Products",
-            url: "products.html",
-            content: "View our products and latest offerings."
-        }
+        "index.html",
+        "about.html",
+        "services.html",
+        "contact.html",
+        "products.html",
+        "blog.html"
     ];
 
-    const matched = pages.filter(page =>
-        page.title.toLowerCase().includes(searchText) ||
-        page.content.toLowerCase().includes(searchText)
-    );
+    const searchText = keyword.toLowerCase();
+    const matched = [];
+
+    for (const page of pages) {
+
+        try {
+
+            const response = await fetch(page);
+            const html = await response.text();
+
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(html, "text/html");
+
+            const text = doc.body.innerText.toLowerCase();
+
+            if (text.includes(searchText)) {
+
+                // Title
+                const title =
+                    doc.querySelector("title")?.innerText ||
+                    page.replace(".html", "");
+
+                matched.push({
+                    title: title,
+                    url: page
+                });
+            }
+
+        } catch (error) {
+            console.log("Could not load:", page);
+        }
+    }
 
     let html = `<h2>Search Results for "${keyword}"</h2>`;
 
     if (matched.length === 0) {
+
         html += `<p>No results found for "${keyword}".</p>`;
+
     } else {
-        matched.forEach(page => {
+
+        matched.forEach(item => {
+
             html += `
                 <div class="search-result">
-                    <h3><a href="${page.url}">${page.title}</a></h3>
-                    <p>${page.content}</p>
+                    <h3>
+                        <a href="${item.url}">
+                            ${item.title}
+                        </a>
+                    </h3>
                 </div>
             `;
+
         });
+
     }
 
     results.innerHTML = html;
+
 });
 </script>
 
