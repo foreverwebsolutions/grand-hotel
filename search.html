@@ -50,7 +50,7 @@
           <li><a href="contact.html">Contact Us</a></li>
           <li><a href="faq.html">Faq</a></li>
           <li><a href="https://hotels.cloudbeds.com/reservation/wZL8NX">Your room</a></li>
-            <span class="search-icon" id="open-search">
+          <span class="search-icon" id="open-search">
             <i class="fa-solid fa-magnifying-glass"></i>
         </span>
         </ul>
@@ -58,103 +58,73 @@
 
     </div>
   </header>
-  <!-- Hero -->
-  <section class="hero otherpages gb-club-pagese">
-    <div class="Container">
-      <img src="images/007-GB-WITH-BG-2-scaled.png" alt="Grand Hotel">
-    </div>
-  </section>
+  
+<!-- Start code-->
 
+<div id="search-results"></div>
 
-  <!--History section-->
-  <section class="history-section history-page gbclup-page">
-    <div class="Container">
-      <h2 class="section-title">An Elite Partnership Begins…</h2>
-      <p class="section-subtitle">The Grand Hotel Excelsior Port Royal x The British James Bond Fan Club</p>
-      <a href="https://007gb.co.uk/" class="btn btn-outline">Explore the Experience</a>
-      <div class="borderss"></div>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
 
-      <div class="history-row reverse">
-        <img src="images/card-25.jpg" alt="Nestled">
-        <div class="history-text">
-          <p>
-            The Grand Hotel Excelsior Port Royal and the UK-based 007GB Club are proud to announce a new
-            cross-promotional partnership.
-          </p>
-          <p>            Commencing in October 2025;</p>
-          <p>
+    const params = new URLSearchParams(window.location.search);
+    const keyword = params.get("q");
+    const results = document.getElementById("search-results");
 
-            The Grand Hotel Excelsior Port Royal will offer members of the 007GB Club a 10% discount upon presentation
-            of their membership card for accommodation.
-          </p>
-        </div>
-      </div>
+    if (!keyword) {
+        results.innerHTML = "<p>Please enter a search term.</p>";
+        return;
+    }
 
-    </div>
-  </section>
-  <!--End-->
-  <section class="amenities-section activities gbclup-page">
-    <div class="Container">
-      <h2 class="section-title">As Featured in ‘Keeping the British End Up"</h2>
-      <h4 class="ne-su">A New 007 Magazine</h4>
-      <p class="connected-center">The 007GB Club will promote our hotel as a premier James Bond themed hotel in Jamaica.
-        They will also offer our
-        guests copies of their latest Club magazine, Keeping The British <br>End Up, which also features an article on
-        the associations between our hotel and Dr. No, as written by Simon Firth.</p>
-      <div class="amenities-grid">
-        <div class="amenity-card"><img src="images/british.jpg" alt="James">
-          <p>Keeping The British End Up Magazine</p>
-        </div>
-        <div class="amenity-card"><img src="images/trakes.jpg" alt="James">
-          <p>On The Tracks Of James Bond</p>
-        </div>
-      </div>
-    </div>
-    </div>
-  </section>
+    const searchText = keyword.toLowerCase();
 
-  <section class="history-section history-page gbclup-page">
-    <div class="Container">
-      <div class="history-row reverse">
-        <div class="history-text">
-          <p>The 007GB Club has been successfully serving the James Bond community since 2022. </p>
-          <p>A not-for-profit club dedicated to the wonderful world of 007, it offers a global community of James Bond
-            enthusiasts a series of annual events to celebrate their shared interests and to raise monies for UNICEF,
-            Sir Roger Moore’s charity for which he worked as a Goodwill Ambassador.</p>
-          <p>Having raised over £55,000 for UNICEF as of July 2025, the events include their triumphant gala dinner
-            event held aboard the HMS Belfast in London and where they presented director John Glen with his ‘Bond &
-            Beyond’ lifetime achievement award, and the highly ambitious and hugely successful Concorde gala where
-            they presented two lifetime achievement awards to Thunderball star Luciana Paluzzi and stunt arranger and
-            director Vic Armstrong.</p>
-        </div>
-        <img src="images/Operation-Concorde-GALA-768x956.png" alt="Fort Kilail">
-      </div>
+    const pages = [
+        {
+            title: "About Us",
+            url: "about.html",
+            content: "Learn more about our company and services."
+        },
+        {
+            title: "Services",
+            url: "services.html",
+            content: "We provide professional web design and development services."
+        },
+        {
+            title: "Contact Us",
+            url: "contact.html",
+            content: "Contact us for more information."
+        },
+        {
+            title: "Products",
+            url: "products.html",
+            content: "View our products and latest offerings."
+        }
+    ];
 
-    </div>
-  </section>
+    const matched = pages.filter(page =>
+        page.title.toLowerCase().includes(searchText) ||
+        page.content.toLowerCase().includes(searchText)
+    );
 
-  <section class="your-inroom gbclup-page new-elite">
-    <div class="Container">
-      <h2 class="section-title">Your In-Room Gift Is Waiting For You </h2>
-      <p class="connected-center">Dive into exclusive articles—including the cinematic connections between our hotel and
-        *Dr. No*.</p>
-      <p class="connected-center">007GB hopes you enjoy the complimentary in-room copy of Keeping The British End Up,
-        and looks forward to
-        hearing from like-minded enthusiasts.
-      </p>
-      <p class="connected-center border-botton">For information, please click the button below:
-      </p>
-      <a href="https://007gb.co.uk/" class="btn btn-outline">Visit 007GB Club</a>
-      <div class="social-icons-cluppage">
-        <a href="#"><i class="fa-solid fa-globe"></i></a>
-        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
-      </div>
-    </div>
-  </section>
+    let html = `<h2>Search Results for "${keyword}"</h2>`;
 
+    if (matched.length === 0) {
+        html += `<p>No results found for "${keyword}".</p>`;
+    } else {
+        matched.forEach(page => {
+            html += `
+                <div class="search-result">
+                    <h3><a href="${page.url}">${page.title}</a></h3>
+                    <p>${page.content}</p>
+                </div>
+            `;
+        });
+    }
 
+    results.innerHTML = html;
+});
+</script>
 
+<!--End-->
   <div id="search-popup" class="search-popup">
     <button type="button" id="close-search">×</button>
     <form id="search-form">
@@ -165,12 +135,15 @@
       </button>
     </form>
   </div>
+
   <!-- Footer -->
   <footer class="site-footer">
     <div class="Container">
       <div class="footer-grid">
         <div class="footer-logo">
+          <a href="/">
           <img src="images/logo-f.png" alt="Grand Hotel Excelsior Port Royal">
+          </a>
         </div>
         <div class="footer-col">
           <h4>About Us</h4>
@@ -223,6 +196,23 @@
 
   <a href="https://web.whatsapp.com/send?phone=18765013167&text=Hello!" class="whatsapp-float"><i
       class="fa-brands fa-whatsapp"></i></a>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const toggle = document.querySelector(".menu-toggle");
+      const nav = document.querySelector(".main-nav");
+
+      toggle.addEventListener("click", function () {
+        nav.classList.toggle("active");
+      });
+
+      // Close menu after clicking a link
+      nav.querySelectorAll("a").forEach(function (link) {
+        link.addEventListener("click", function () {
+          nav.classList.remove("active");
+        });
+      });
+    });
+  </script>
 </body>
 
 </html>

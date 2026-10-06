@@ -173,17 +173,16 @@
     </div>
   </section>
   End--> 
-<div id="search-popup" class="search-popup">
-    <button type="button" id="close-search" class="search-close">×</button>
+  <div id="search-popup" class="search-popup">
+    <button type="button" id="close-search">×</button>
+    <form id="search-form">
+      <input type="search" id="search-input" placeholder="Search..." autocomplete="off">
 
-    <form role="search" method="get" action="/">
-        <input type="search" name="s" placeholder="Search..." required>
-        <button type="submit">
-            <i class="fa-solid fa-magnifying-glass"></i>
-        </button>
+      <button type="submit">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
     </form>
-</div>
-
+  </div>
   <!-- Footer -->
   <footer class="site-footer">
     <div class="Container">
