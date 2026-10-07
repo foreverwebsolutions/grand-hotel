@@ -133,3 +133,38 @@ document.addEventListener("DOMContentLoaded", async function () {
     results.innerHTML = output;
 });
   AOS.init();
+
+  document.addEventListener('DOMContentLoaded', function () {
+
+  document.querySelectorAll('.main-nav li.drop').forEach(function (item) {
+
+    var link = item.querySelector(':scope > a');
+    var submenu = item.querySelector(':scope > ul.sub-menu');
+
+    if (!link || !submenu) return;
+
+    var toggle = document.createElement('button');
+
+    toggle.type = 'button';
+    toggle.className = 'mobile-submenu-toggle';
+    toggle.setAttribute('aria-label', 'Toggle submenu');
+    toggle.textContent = '+';
+
+    item.appendChild(toggle);
+
+    toggle.addEventListener('click', function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+
+      item.classList.toggle('mobile-open');
+
+      if (item.classList.contains('mobile-open')) {
+        toggle.textContent = '−';
+      } else {
+        toggle.textContent = '+';
+      }
+    });
+
+  });
+
+});

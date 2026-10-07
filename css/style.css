@@ -1403,4 +1403,76 @@ li.drop ul.sub-menu li a {
 .desktop-hide{
     display: block;;
 }
+
+
+ /* History parent */
+  .main-nav li.drop {
+    position: relative;
+  }
+
+  /* History link */
+  .main-nav li.drop > a {
+    position: relative;
+    padding-right: 55px !important;
+    display: block;
+  }
+
+  /* Hide existing arrow */
+  .main-nav li.drop > a i {
+    display: none;
+  }
+
+  /* Mobile toggle button */
+  .main-nav li.drop > .mobile-submenu-toggle {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    border: 0;
+    background: #ead9bd;
+    color: #333;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    padding: 0;
+    cursor: pointer;
+    z-index: 5;
+  }
+
+  /* Submenu closed */
+  .main-nav li.drop > ul.sub-menu {
+    position: static !important;
+    left: auto !important;
+    top: auto !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    display: none;
+    padding: 0 0 0 20px !important;
+    margin: 0 !important;
+    background: transparent !important;
+  }
+
+  /* Submenu open */
+  .main-nav li.drop.mobile-open > ul.sub-menu {
+    display: block !important;
+  }
+
+  /* James Bond */
+  .main-nav li.drop > ul.sub-menu > li {
+    position: static !important;
+    display: block !important;
+    width: 100% !important;
+    padding: 10px 0 !important;
+    background: transparent !important;
+  }
+
+  .main-nav li.drop > ul.sub-menu > li a {
+    display: block;
+    padding: 0 !important;
+  }
+
+
+
 }
