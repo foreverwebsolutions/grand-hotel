@@ -1205,6 +1205,9 @@ p.connected-center.border-botton {
     font-size: 40px;
     cursor: pointer;
 }
+button.mobile-submenu-toggle {
+    display: none;
+}
 /*==========================
 Mobile Responsive Css Start
 ============================*/
@@ -1460,19 +1463,22 @@ li.drop ul.sub-menu li a {
   }
 
   /* James Bond */
-  .main-nav li.drop > ul.sub-menu > li {
+.main-nav li.drop > ul.sub-menu > li {
     position: static !important;
     display: block !important;
     width: 100% !important;
     padding: 10px 0 !important;
     background: transparent !important;
-  }
+    box-shadow: none;
+}
 
   .main-nav li.drop > ul.sub-menu > li a {
     display: block;
     padding: 0 !important;
   }
-
+button.mobile-submenu-toggle {
+    display: block;
+}
 
 
 }
