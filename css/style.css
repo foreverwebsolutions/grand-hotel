@@ -858,8 +858,12 @@ Contact Page css
     
 }
 
-.contact-page .contact-info h2:after {}
-
+.contact-uspage .hero-overlay {
+    background: linear-gradient(180deg, rgb(0 0 0 / 20%), rgb(0 0 0 / 20%)) !important;
+}
+.contact-uspage {
+    height: 420px !important;
+}
 .contact-page .contact-info p a, p span {
     font-family: "Marcellus SC", Sans-serif;
     font-size: 18px;
