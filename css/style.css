@@ -31,6 +31,7 @@ h1,h2,h3,h4,h5{  font-family: "Marcellus SC", serif;}
 }
 .top-bar {
     position: fixed;
+    width: 100%;
     max-width: 100%;
     top: 0;
     z-index: 99999;
