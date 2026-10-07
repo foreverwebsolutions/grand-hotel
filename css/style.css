@@ -54,7 +54,9 @@ h1,h2,h3,h4,h5{  font-family: "Marcellus SC", serif;}
     margin: 0;
     display: flex;
 }
-
+.desktop-hide{
+    display: none;;
+}
 .main-nav ul li {
     list-style: none;
 }
@@ -1378,17 +1380,10 @@ nav.main-nav.active {
 nav.main-nav a {
     color: #000;
 }
-li.drop ul.sub-menu li {
-    display: block !important;
-    position: static;
-    padding: 0;
-}
 li.drop ul.sub-menu li a {
     padding: 5px 0;
 }
-li.drop a i {
-    display: none !important;
-}
+
 .other-pages-header {
     margin-top: 65px;
 }
@@ -1404,5 +1399,8 @@ li.drop a i {
 }
 .history-text {
     text-align: center;
+}
+.desktop-hide{
+    display: block;;
 }
 }
