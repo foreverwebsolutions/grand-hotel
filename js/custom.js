@@ -132,3 +132,4 @@ document.addEventListener("DOMContentLoaded", async function () {
 
     results.innerHTML = output;
 });
+  AOS.init();
