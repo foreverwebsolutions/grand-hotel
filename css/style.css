@@ -1479,6 +1479,9 @@ li.drop ul.sub-menu li a {
 button.mobile-submenu-toggle {
     display: block;
 }
-
+.gb-club-pagese img {
+    width: 90%;
+    margin: 60px auto 0;
+}
 
 }
