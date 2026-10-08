@@ -1488,6 +1488,8 @@ section.history-section.history-page p.MsoNormal {
 }
 .alin-text .history-text {
     text-align: left;
-        padding-bottom: 30px !IMPORTANT;
 }   
+.alin-text p.MsoNormal {
+    padding-bottom: 30px !important;
+}
 }
